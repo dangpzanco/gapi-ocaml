@@ -2,15 +2,15 @@ opam-version: "2.0"
 maintainer: "Alessandro Strada <alessandro.strada@gmail.com>"
 authors: [ "Alessandro Strada" ]
 license: "MIT"
-homepage: "https://github.com/astrada/gapi-ocaml"
-dev-repo: "git+https://github.com/astrada/gapi-ocaml.git"
-bug-reports: "https://github.com/astrada/gapi-ocaml/issues"
+homepage: "https://github.com/dangpzanco/gapi-ocaml"
+dev-repo: "git+https://github.com/dangpzanco/gapi-ocaml.git"
+bug-reports: "https://github.com/dangpzanco/gapi-ocaml/issues"
 build: [
   ["dune" "build" "-p" name "-j" jobs]
   ["dune" "runtest" "-p" name "-j" jobs] {with-test}
 ]
 depends: [
-  "ocaml" {>= "4.02.3"}
+  "ocaml" {>= "5.0.0"}
   "cryptokit"
   "dune"
   "ocamlnet" {>= "4.1.4"}
